@@ -59,6 +59,7 @@
            for(int i=0; i<(int)atcTitles.size(); i++) {
                if(atcTitles[i] == "skip") continue;
                if(atcTitles[i] == "Rating:") std::cout << atcTitles[i] << " " << atcRatings[this->stringToInt(data[i])-1] << "\n";
+               else if(atcTitles[i] == "Facility:") std::cout << atcTitles[i] << " " << atcFacilities[this->stringToInt(data[i])] << "\n";
                else std::cout << atcTitles[i] << " " << data[i] << "\n";
            }
        }
